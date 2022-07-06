@@ -6,44 +6,44 @@ import '../css/style.css';
 import contatofoto from '../imgs/cttofoto.png'
 
 
-//insere nas variaveis
-const NovoVisitor = () => {
-    const estadoInicial = {
-        id: null,
-        nome: "",
-        telefone: "",
-        email: "",
-    };
-    const [visitor, setVisitor] = useState(estadoInicial);
-    const [submitted, setSubmitted] = useState(false);
+class Contato extends Component {   
+         //insere nas variaveis
+        const NovoVisitor = () => {
+            const estadoInicial = {
+                id: null,
+                nome: "",
+                telefone: "",
+                email: "",
+            };
+            const [visitor, setVisitor] = useState(estadoInicial);
+            const [submitted, setSubmitted] = useState(false);
 
-    const trataCampo = (event) => {
-        const { name, value } = event.target;
-        setVisitor({ ...visitor, [name]: value });
-    };
+            const trataCampo = (event) => {
+                const { name, value } = event.target;
+                setVisitor({ ...visitor, [name]: value });
+            };
 
-    //captura e envio para o banco
-    const enviarVisitor = () => {
-        api
-            .create(visitor)
-            .then((response) => {
-                setVisitor({
-                    id: response.data.id,
-                    nome: response.data.nome,
-                    telefone: response.data.telefone,
-                    email: response.data.email,
-                });
-                setSubmitted(true);
-                console.log(response.data);
-            })
-            .catch((e) => {
-                console.log(e);
-            });
-    };
-};
-
-
-class Contato extends Component {
+            //captura e envio para o banco
+            const enviarVisitor = () => {
+                api
+                    .create(visitor)
+                    .then((response) => {
+                        setVisitor({
+                            id: response.data.id,
+                            nome: response.data.nome,
+                            telefone: response.data.telefone,
+                            email: response.data.email,
+                        });
+                        setSubmitted(true);
+                        console.log(response.data);
+                    })
+                    .catch((e) => {
+                        console.log(e);
+                    });
+            };
+        };
+    
+    
     render() {
         return (
             <section>
