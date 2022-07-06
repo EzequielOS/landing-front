@@ -5,7 +5,7 @@ const Excel = () => {
   const exportExcel = () => {
     api.exportExcel().then((response) => {
       console.log(response);
-      FileDownload(response.data, "leads.xlsx");
+      FileDownload(response.data, "visitores.xlsx");
     });
   };
 
