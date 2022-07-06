@@ -4,15 +4,15 @@ import * as api from "../../services/Endpoints";
 
 const Login = ({ setSubmitted }) => {
   const estadoInicial = {
-    nome: "",
-    senha: "",
+    name: "",
+    pass: "",
   };
-  const [user, setUser] = useState(estadoInicial);
+  const [admin, setAdmin] = useState(estadoInicial);
   const [erro, setErro] = useState("");
 
   const trataCampo = (event) => {
     const { name, value } = event.target;
-    setUser({ ...user, [name]: value });
+    setAdmin({ ...admin, [name]: value });
   };
 
   useEffect(() => {
@@ -22,9 +22,9 @@ const Login = ({ setSubmitted }) => {
   }, []);
 
   const logar = () => {
-    console.log(user);
+    console.log(admin);
     api
-      .login(user)
+      .login(admin)
       .then((response) => {
         setSubmitted(true);
         console.log(response.data);
@@ -42,21 +42,21 @@ const Login = ({ setSubmitted }) => {
       <input
         type="text"
         className="border-0 border-bottom mx-1"
-        id="nome"
+        id="name"
         required
-        value={user.nome}
+        value={admin.name}
         onChange={trataCampo}
-        name="nome"
+        name="name"
         placeholder="Usuário"
       />
       <input
         type="password"
         className="border-0 border-bottom mx-1"
-        id="senha"
+        id="pass"
         required
-        value={user.senha}
+        value={admin.pass}
         onChange={trataCampo}
-        name="senha"
+        name="pass"
         placeholder="Senha de acesso"
       />
       <button onClick={logar} className="border-0 mx-1">
