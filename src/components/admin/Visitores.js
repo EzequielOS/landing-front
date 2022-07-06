@@ -12,7 +12,7 @@ const Visitores = () => {
     api
       .getAll()
       .then((response) => {
-        setLeads(response.data);
+        setVisitores(response.data);
         console.log("---------------------", response.data);
       })
       .catch((e) => {
@@ -23,8 +23,8 @@ const Visitores = () => {
   return (
     <div className="container list row">
       <div className="col-md-6 mt-4">
-        <h4>Leads</h4>
-        {leads.length !== 0 && (
+        <h4>Visitores</h4>
+        {visitores.length !== 0 && (
           <table className="table table-striped table-hover">
             <thead>
               <tr>
@@ -33,10 +33,10 @@ const Visitores = () => {
               </tr>
             </thead>
             <tbody>
-              {leads.map((lead, key) => (
+              {visitores.map((visitor, key) => (
                 <tr key={key}>
-                  <td>{lead.nome}</td>
-                  <td>{lead.email}</td>
+                  <td>{visitor.nome}</td>
+                  <td>{visitor.email}</td>
                 </tr>
               ))}
             </tbody>
@@ -47,4 +47,4 @@ const Visitores = () => {
   );
 };
 
-export default Leads;
+export default Visitores;
