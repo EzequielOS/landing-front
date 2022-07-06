@@ -29,7 +29,7 @@ class Imoveis extends Component {
                             <Carousel.Caption>
                                 <div>
                                     <h6 className="titulocarrocel">Casas</h6>
-                                    <p className="textocarrocel">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                    <p className="textocarrocel">As melhores casas nos melhores endereços.</p>
                                 </div>
                             </Carousel.Caption>
                         </Carousel.Item>
@@ -41,7 +41,7 @@ class Imoveis extends Component {
                             />
                             <Carousel.Caption>
                                 <h6 className="titulocarrocel">Apartamentos</h6>
-                                <p className="textocarrocel">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p className="textocarrocel">Um lugar especial para você chamar de seu.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -52,7 +52,7 @@ class Imoveis extends Component {
                             />
                             <Carousel.Caption>
                                 <h6 className="titulocarrocel">Terrenos</h6>
-                                <p className="textocarrocel">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                <p className="textocarrocel">A melhor localização para você construir do seu jeito.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>

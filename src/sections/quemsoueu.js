@@ -19,7 +19,7 @@ class Quemsoueu extends Component {
                         <img src={quemsoueufoto} alt="" className="quemsoueufoto quemsoueufotopq"/>
                     </div>
                     <div className="align-self-md-center p-5">
-                        <p>Corretora de imóveis,
+                        <p className="textos">Corretora de imóveis,
                             aceitei esse desafio há quase dois anos e me sinto muito feliz e realizada. Como corretora alcancei números de destaque, vendendo mais de 25
                             imóveis e sendo destaque da minha imobiliária em todos esses anos, em primeiro lugar em vendas.</p>
                         <p>Eu busco incansavelmente entender as necessidades dos meus clientes, para realizar um atendimento com excelência.</p>

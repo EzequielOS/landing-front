@@ -14,6 +14,5 @@ root.render(<App/>);
 //npm install
 //npm install react-bootstrap bootstrap
 
-
-//justificar textos
-//criar os depoimentos coma mary
+//incluir funções da captura para o backend
+//colocar a caixa do segundo depo sempre do tamanho da primeira

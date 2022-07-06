@@ -17,7 +17,7 @@ class Meuservico extends Component {
 
                     <div className="d-xl-flex justify-content-center">
                         <div className="align-self-md-center p-5">
-                            <p>Eu ajudo as pessoas a encontrarem os imóveis que elas buscam, de forma leve e descomplicada. Com
+                            <p className="textos">Eu ajudo as pessoas a encontrarem os imóveis que elas buscam, de forma leve e descomplicada. Com
                                 propriedade para assessorar em todo o processo, desde a escolha do imóvel, a comparação de cenários
                                 de oportunidade e valorização, aprovação do crédito se necessário e trâmites burocráticos que
                                 envolvem o processo.</p>

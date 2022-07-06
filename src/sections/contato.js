@@ -24,6 +24,8 @@ class Contato extends Component {
                             <label>Nome:</label><br/>
                             <input type="text" className="" size="30"/><br/><br/>
                             <label>Telefone:</label><br/>
+                            <input type="text" className="" size="30"/><br/><br/>
+                            <label>E-mail:</label><br/>
                             <input type="text" className="" size="30"/><br/>
                             <input type="button" className="botao" value="ENVIAR"/>
                         </form>
