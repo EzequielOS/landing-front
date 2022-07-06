@@ -3,46 +3,7 @@ import '../css/ourstrap.css';
 import '../css/style.css';
 import contatofoto from '../imgs/cttofoto.png'
 
-
-import * as api from "../../services/Endpoints";
-
-
 class Contato extends Component {
-    
-    
-  const NovoVisitor = () => {
-            const estadoInicial = {
-                    id: null,
-                    nome: "",
-                    email: "",
-                    telefone:"",
-            };
-            const [visitor, setvisitor] = useState(estadoInicial);
-            const [submitted, setSubmitted] = useState(false);
-
-            const trataCampo = (event) => {
-            const { name, value } = event.target;
-            setVisitor({ ...visitor, [name]: value });
-            };
-
-            const enviarVisitor = () => {
-            api
-                        .create(visitor)
-                        .then((response) => {
-                        setVisitor({
-                        id: response.data.id,
-                        nome: response.data.nome,
-                        email: response.data.email,
-                        telefone: response.data.telefone,
-                        });
-            setSubmitted(true);
-            console.log(response.data);
-            })
-            .catch((e) => {
-            console.log(e);
-            });
-            };
-
     render() {
         return (
             <section>
@@ -61,12 +22,12 @@ class Contato extends Component {
                     <div className="align-self-md-center p-5">
                         <form>
                             <label>Nome:</label><br/>
-                            <input id="nome" required value={visitor.nome} onChange={trataCampo} name="nome" type="text" className="" placeholder="O seu nome?" size="30"/>
+                            <input type="text" className="" size="30"/><br/><br/>
                             <label>Telefone:</label><br/>
                             <input type="text" className="" size="30"/><br/><br/>
                             <label>E-mail:</label><br/>
                             <input type="text" className="" size="30"/><br/>
-                            <input type="button" onClick={enviarLead} className="botao" value="ENVIAR"/>
+                            <input type="button" className="botao" value="ENVIAR"/>
                         </form>
                     </div>
                 </div>
