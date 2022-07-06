@@ -4,7 +4,7 @@ import * as api from "../../services/Endpoints";
 import '../css/ourstrap.css';
 import '../css/style.css';
 import contatofoto from '../imgs/cttofoto.png';
-import NovoVisitor from 'novovisitor.js';
+import NovoVisitor from '../visitor/novovisitor.js';
 
 
 class Contato extends Component {   
