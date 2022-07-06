@@ -11,7 +11,7 @@ const Excel = () => {
 
   return (
     <button className="btn m-4 btn-secondary" onClick={() => exportExcel()}>
-      Exportar dados em formato excel
+      Exportar dados em Excel
     </button>
   );
 };

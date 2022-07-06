@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import * as api from "../../services/Endpoints";
+import '../css/style.css';
 
 const Visitores = () => {
   const [visitores, setVisitores] = useState([]);
@@ -23,7 +24,7 @@ const Visitores = () => {
   return (
     <div className="container list row bg-secondary">
       <div className="col-md-6 mt-4">
-        <h4>Visitores</h4>
+        <h4>Pessoas cadastradas</h4>
         {visitores.length !== 0 && (
           <table className="table table-striped table-hover">
             <thead>

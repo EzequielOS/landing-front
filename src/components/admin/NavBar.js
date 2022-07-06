@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Visitores from "./Visitores";
 import Login from "./Login";
 import Excel from "./Excel";
+import '../css/style.css';
 
 const NavBar = ({ submitted, setSubmitted }) => {
   const [content, setContent] = useState("");
@@ -15,19 +16,19 @@ const NavBar = ({ submitted, setSubmitted }) => {
   };
 
   return (
-    <div className="bg-dark">
+    <div className="bgcinza">
       <nav className="container navbar navbar-expand navbar-dark bg-dark">
         <h1 className="navbar-brand">Administração de dados coletados:</h1>
         {submitted ? (
           <div className="navbar-nav mr-auto">
             <li className="nav-item">
               <Link onClick={() => setContent("visitores")} to={""} className="nav-link">
-                Visitores
+                Cadastros
               </Link>
             </li>
             <li className="nav-item">
               <Link onClick={() => setContent("excel")} to={""} className="nav-link">
-                Export to excel
+                Exportar para Excel
               </Link>
             </li>
             <li className="nav-item">

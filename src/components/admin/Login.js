@@ -67,7 +67,7 @@ const Login = ({ setSubmitted }) => {
           <span>{erro}</span>
         </span>
       ) : (
-        <span className="ml-3 text-light">Realize a autenticação</span>
+        <span className="ml-3 text-light">Informe o login e a senha para visualizar os dados</span>
       )}
     </div>
   );
