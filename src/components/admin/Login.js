@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import * as api from "../../services/Endpoints";
 
+
 const Login = ({ setSubmitted }) => {
   const estadoInicial = {
     nome: "",
@@ -46,7 +47,7 @@ const Login = ({ setSubmitted }) => {
         value={user.nome}
         onChange={trataCampo}
         name="nome"
-        placeholder="Nome do usuário"
+        placeholder="Usuário"
       />
       <input
         type="password"
@@ -56,10 +57,10 @@ const Login = ({ setSubmitted }) => {
         value={user.senha}
         onChange={trataCampo}
         name="senha"
-        placeholder="Senha"
+        placeholder="Senha de acesso"
       />
       <button onClick={logar} className="border-0 mx-1">
-        Enviar
+        Acessar
       </button>
       {erro !== "" ? (
         <span className="alert alert-danger ml-3">

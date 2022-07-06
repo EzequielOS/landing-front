@@ -10,9 +10,9 @@ const root = createRoot(container); // createRoot(container!) if you use TypeScr
 root.render(<App/>);
 
 
-//executar os dois comandos sempre que baixar ou clonar o projeto
+//executar os comandos sempre que baixar ou clonar o projeto
 //npm install
 //npm install react-bootstrap bootstrap
-
-//incluir funções da captura para o backend
-//colocar a caixa do segundo depo sempre do tamanho da primeira
+//npm install -S react-router-dom
+//npm install js-file-download --save
+//npm install axios

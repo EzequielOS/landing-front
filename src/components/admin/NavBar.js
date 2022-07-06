@@ -15,9 +15,9 @@ const NavBar = ({ submitted, setSubmitted }) => {
   };
 
   return (
-    <div>
+    <div className="bg-dark">
       <nav className="container navbar navbar-expand navbar-dark bg-dark">
-        <h1 className="navbar-brand">Landing page admin</h1>
+        <h1 className="navbar-brand">Administração de dados coletados:</h1>
         {submitted ? (
           <div className="navbar-nav mr-auto">
             <li className="nav-item">
