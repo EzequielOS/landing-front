@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import * as api from "../../services/Endpoints";
+import '../css/style.css';
 
 const NovoVisitor = () => {
   const estadoInicial = {
@@ -38,14 +39,14 @@ const NovoVisitor = () => {
     <div className="submit-form">
       {submitted ? (
         <div>
-          <h4 className="text-white">Succes!</h4>
+          <h4 className="text-white">Obrigado por ter se cadastrado!</h4>
         </div>
       ) : (
         <div>
           <div className="position-relative d-block" data-aos="fade-up">
             <div className="form-group">
               <label className="text-white" htmlFor="nome">
-                Your Name
+                Nome:
               </label>
               <input
                 id="nome"
@@ -55,12 +56,12 @@ const NovoVisitor = () => {
                 name="nome"
                 type="text"
                 className="form-control form-control-lg"
-                placeholder="Type your name"
+                size="30"
               />
             </div>
             <div className="form-group">
               <label className="text-white" htmlFor="email">
-                Email Address
+                E-mail:
               </label>
               <input
                 id="email"
@@ -70,7 +71,7 @@ const NovoVisitor = () => {
                 name="email"
                 type="email"
                 className="form-control form-control-lg"
-                placeholder="you@yoursite.com"
+                size="30"
               />
             </div>
               <div className="form-group">
@@ -85,13 +86,13 @@ const NovoVisitor = () => {
                       name="telefone"
                       type="telefone"
                       className="form-control form-control-lg"
-                      placeholder="telefone"
+                      size="30"
                     />
                   </div>
 
             <div className="form-group text-center">
-              <button onClick={enviarVisitor} className="btn btn-lg btn-success btn-block mb-2" type="submit">
-                Claim your free spot
+              <button onClick={enviarVisitor} className="botao" type="submit">
+                Enviar
               </button>
               <small className="text-white">You’ll recieve your first lesson via email in less than a minute.</small>
             </div>
