@@ -30,6 +30,7 @@ const Visitores = () => {
               <tr>
                 <th>Nome</th>
                 <th>Email</th>
+                <th>Telefone</th>
               </tr>
             </thead>
             <tbody>
@@ -37,6 +38,7 @@ const Visitores = () => {
                 <tr key={key}>
                   <td>{visitor.nome}</td>
                   <td>{visitor.email}</td>
+                  <td>{visitor.telefone}</td>
                 </tr>
               ))}
             </tbody>
