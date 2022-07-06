@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Leads from "./Visitores";
+import Visitores from "./Visitores";
 import Login from "./Login";
 import Excel from "./Excel";
 
@@ -22,7 +22,7 @@ const NavBar = ({ submitted, setSubmitted }) => {
           <div className="navbar-nav mr-auto">
             <li className="nav-item">
               <Link onClick={() => setContent("visitores")} to={""} className="nav-link">
-                Leads
+                Visitores
               </Link>
             </li>
             <li className="nav-item">
@@ -40,9 +40,9 @@ const NavBar = ({ submitted, setSubmitted }) => {
           <Login setSubmitted={setSubmitted} />
         )}
       </nav>
-      {content === "leads" ? (
+      {content === "visitores" ? (
         <div className="container">
-          <Leads />
+          <Visitores />
         </div>
       ) : null}
       {content === "excel" ? (
