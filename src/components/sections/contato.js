@@ -8,7 +8,6 @@ import contatofoto from '../imgs/cttofoto.png'
 
 class Contato extends Component {   
          //insere nas variaveis
-        const NovoVisitor = () => {
             const estadoInicial = {
                 id: null,
                 nome: "",
@@ -41,7 +40,6 @@ class Contato extends Component {
                         console.log(e);
                     });
             };
-        };
     
     
     render() {
