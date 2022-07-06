@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Playfair+Display&family=Raleway&display=swap');
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #FFFA87;
+    text-shadow: 2px 2px 2px #000000;
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    color: #666666;
+    text-align: center;
+    font-size: 19px;
+}
+
+h5 {
+    color: #FFFFFF;
+    text-align: right;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 2px 2px #000000;
+    font-weight: bold;
+}
+
+p,
+label {
+    font-family: 'Dosis', sans-serif;
+    font-size: 19px;
+}
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 50px 0px 0px 0px;
+    padding: 10px;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+input {
+    outline: 0;
+    border-width: 0 0 1px;
+
+}
+
+
+.quemsoueufoto {
+    box-shadow: 5px 5px 5px #737373;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.bgcinza {
+    background-color: #EFEFEF;
+}
+
+.iconefooter {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.wid100 {
+    width: 100%;
+}
+
+.sombreado {
+    box-shadow: 5px 5px 5px #737373;
+}
+
+.titulo {
+    font-weight: bold;
+    color: #0007A5;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.subtitulo {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.descricao {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.imgfooter {
+    width: 50px;
+}
+
+.botao {
+    background-color: #4BAFFE;
+    border: 0;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 30px 0px;
+    padding: 10px 70px 10px 70px;
+}
+
+.cttofoto {
+    width: 100%;
+    box-shadow: 5px 5px 5px #737373;
+}
+
+.ccaption {
+    background-color: #ffffff70;
+
+}
+
+.titulocarrocel {
+    font-size: 25px;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.textocarrocel {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.divtitulos {
+    position: absolute;
+    top:50%;
+    right: 0px;
+    padding-right: 10px;
+}
+
+.imgsdepo{
+    width: 55%;
+    box-shadow: 5px 5px 5px #737373;
+    margin-bottom: -17%;
+}
+
+.centro{
+    text-align: center;
+}
+
+@media screen and (max-width:1100px) {
+    .telagrande{
+        position: absolute;
+        left: -1000px;
+    }
+
+    .quemsoueufotopq {
+        size:50%;
+    }
+    
+    .divtitulospq {
+        position: absolute;
+        top: 9%;
+        right: 0px;
+        padding-right: 10px;
+    }
+}
+
