@@ -45,7 +45,7 @@ const NovoVisitor = () => {
         <div>
           <div className="position-relative d-block" data-aos="fade-up">
             <div className="form-group">
-              <label className="text-white" htmlFor="nome">
+              <label className="" htmlFor="nome">
                 Nome:
               </label>
               <input
@@ -55,12 +55,12 @@ const NovoVisitor = () => {
                 onChange={trataCampo}
                 name="nome"
                 type="text"
-                className="form-control form-control-lg"
+                className="form-control form-control-lg input"
                 size="30"
               />
             </div>
             <div className="form-group">
-              <label className="text-white" htmlFor="email">
+              <label className="" htmlFor="email">
                 E-mail:
               </label>
               <input
@@ -70,12 +70,12 @@ const NovoVisitor = () => {
                 onChange={trataCampo}
                 name="email"
                 type="email"
-                className="form-control form-control-lg"
+                className="form-control form-control-lg input"
                 size="30"
               />
             </div>
               <div className="form-group">
-                    <label className="text-white" htmlFor="email">
+                    <label className="" htmlFor="email">
                       Telefone
                     </label>
                     <input
@@ -85,7 +85,7 @@ const NovoVisitor = () => {
                       onChange={trataCampo}
                       name="telefone"
                       type="telefone"
-                      className="form-control form-control-lg"
+                      className="form-control form-control-lg input"
                       size="30"
                     />
                   </div>
@@ -94,7 +94,6 @@ const NovoVisitor = () => {
               <button onClick={enviarVisitor} className="botao" type="submit">
                 Enviar
               </button>
-              <small className="text-white">You’ll recieve your first lesson via email in less than a minute.</small>
             </div>
           </div>
         </div>
