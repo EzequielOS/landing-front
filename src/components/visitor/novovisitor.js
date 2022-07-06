@@ -39,7 +39,7 @@ const NovoVisitor = () => {
     <div className="submit-form">
       {submitted ? (
         <div>
-          <h4 className="text-white">Obrigado por ter se cadastrado!</h4>
+          <h4 className="">Obrigado por ter se cadastrado!</h4>
         </div>
       ) : (
         <div>
