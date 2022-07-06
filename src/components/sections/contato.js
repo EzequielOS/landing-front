@@ -66,7 +66,7 @@ class Contato extends Component {
                             <input type="text" className="" size="30"/><br/><br/>
                             <label>E-mail:</label><br/>
                             <input type="text" className="" size="30"/><br/>
-                            <input type="button" className="botao" value="ENVIAR"/>
+                            <input type="button" onClick={enviarLead} className="botao" value="ENVIAR"/>
                         </form>
                     </div>
                 </div>
