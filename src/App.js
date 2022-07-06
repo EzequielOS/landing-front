@@ -1,27 +1,21 @@
-import React, { Component } from 'react';
+import { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Clientes from './sections/clientes';
-import Contato from './sections/contato';
-import Footer from './sections/footer';
-import Imoveis from './sections/imoveis';
-import Meuservico from './sections/meuservico';
-import Quemsoueu from './sections/quemsoueu';
-import Titulo from './sections/titulo';
 
-class App extends Component {
-    render() {
-        return (
-            <div>
-                <Titulo/>
-                <Quemsoueu/>
-                <Meuservico/>
-                <Clientes/>
-                <Imoveis/>
-                <Contato/>
-                <Footer/>
-            </div>
-        );
-    }
+import NavBar from "./components/admin/NavBar";
+import LandingPage from "./components/visitor/pagevisitor";
+
+function App() {
+  const [submitted, setSubmitted] = useState(false);
+
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<PageVisitor />} />
+        <Route path="/admin" element={<NavBar submitted={submitted} setSubmitted={setSubmitted} />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
