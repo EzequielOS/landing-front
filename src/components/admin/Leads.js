@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import * as api from "../../services/Endpoints";
 
-const Leads = () => {
-  const [leads, setLeads] = useState([]);
+const Visitores = () => {
+  const [visitores, setVisitores] = useState([]);
 
   useEffect(() => {
-    buscaLeads();
+    buscaVisitores();
   }, []);
 
-  const buscaLeads = () => {
+  const buscaVisitores = () => {
     api
       .getAll()
       .then((response) => {
