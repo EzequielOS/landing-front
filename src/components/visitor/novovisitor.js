@@ -90,7 +90,7 @@ const NovoVisitor = () => {
                   </div>
 
             <div className="form-group text-center">
-              <button onClick={enviarLead} className="btn btn-lg btn-success btn-block mb-2" type="submit">
+              <button onClick={enviarVisitor} className="btn btn-lg btn-success btn-block mb-2" type="submit">
                 Claim your free spot
               </button>
               <small className="text-white">You’ll recieve your first lesson via email in less than a minute.</small>
