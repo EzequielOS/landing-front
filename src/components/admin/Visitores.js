@@ -21,7 +21,7 @@ const Visitores = () => {
   };
 
   return (
-    <div className="container list row">
+    <div className="container list row bg-secondary">
       <div className="col-md-6 mt-4">
         <h4>Visitores</h4>
         {visitores.length !== 0 && (
