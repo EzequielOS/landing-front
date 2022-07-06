@@ -7,27 +7,27 @@ import contatofoto from '../imgs/cttofoto.png'
 
 
 //insere nas variaveis
-const NovoLead = () => {
+const NovoVisitor = () => {
     const estadoInicial = {
         id: null,
         nome: "",
         telefone: "",
         email: "",
     };
-    const [lead, setLead] = useState(estadoInicial);
+    const [visitor, setVisitor] = useState(estadoInicial);
     const [submitted, setSubmitted] = useState(false);
 
     const trataCampo = (event) => {
         const { name, value } = event.target;
-        setLead({ ...lead, [name]: value });
+        setVisitor({ ...visitor, [name]: value });
     };
 
     //captura e envio para o banco
-    const enviarLead = () => {
+    const enviarVisitor = () => {
         api
-            .create(lead)
+            .create(visitor)
             .then((response) => {
-                setLead({
+                setVisitor({
                     id: response.data.id,
                     nome: response.data.nome,
                     telefone: response.data.telefone,
@@ -65,25 +65,25 @@ class Contato extends Component {
                                 <input type="text" className="" size="30"
                                     id="nome"
                                     required
-                                    value={lead.nome}
+                                    value={visitor.nome}
                                     onChange={trataCampo}
                                     name="nome" /><br /><br />
                                 <label>Telefone:</label><br />
                                 <input type="text" className="" size="30"
                                     id="telefone"
                                     required
-                                    value={lead.telefone}
+                                    value={visitor.telefone}
                                     onChange={trataCampo}
                                     name="telefone" /><br /><br />
                                 <label>E-mail:</label><br />
                                 <input className="" size="30"
                                     id="email"
                                     required
-                                    value={lead.email}
+                                    value={visitor.email}
                                     onChange={trataCampo}
                                     name="email"
                                     type="email" /><br />
-                                <input type="submit" className="botao" value="ENVIAR" onClick={enviarLead} />
+                                <input type="submit" className="botao" value="ENVIAR" onClick={enviarVisitor} />
                             </form>
                         </div>
                     </div>
