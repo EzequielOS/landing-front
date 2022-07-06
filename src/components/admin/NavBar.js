@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Leads from "./Leads";
+import Leads from "./Visitores";
 import Login from "./Login";
 import Excel from "./Excel";
 
@@ -21,7 +21,7 @@ const NavBar = ({ submitted, setSubmitted }) => {
         {submitted ? (
           <div className="navbar-nav mr-auto">
             <li className="nav-item">
-              <Link onClick={() => setContent("leads")} to={""} className="nav-link">
+              <Link onClick={() => setContent("visitores")} to={""} className="nav-link">
                 Leads
               </Link>
             </li>
